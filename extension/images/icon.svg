@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect x="0" y="0" width="128" height="128" fill="#f0f0f0" rx="16" ry="16"/>
+  
+  <!-- Monster body -->
+  <path d="M20 60 Q64 20 108 60 Q64 100 20 60" fill="#8e44ad"/>
+  
+  <!-- Eyes -->
+  <circle cx="48" cy="50" r="12" fill="white"/>
+  <circle cx="80" cy="50" r="12" fill="white"/>
+  <circle cx="48" cy="50" r="6" fill="black"/>
+  <circle cx="80" cy="50" r="6" fill="black"/>
+  
+  <!-- Mouth -->
+  <path d="M40 75 Q64 100 88 75" fill="none" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Website being gobbled -->
+  <rect x="56" y="68" width="32" height="24" fill="#3498db" transform="rotate(-15 72 80)"/>
+  <line x1="60" y1="74" x2="84" y2="74" stroke="white" stroke-width="2" transform="rotate(-15 72 80)"/>
+  <line x1="60" y1="80" x2="84" y2="80" stroke="white" stroke-width="2" transform="rotate(-15 72 80)"/>
+  <line x1="60" y1="86" x2="76" y2="86" stroke="white" stroke-width="2" transform="rotate(-15 72 80)"/>
+</svg>
