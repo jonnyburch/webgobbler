@@ -1,0 +1,6 @@
+const config = {
+  GOOGLE_APPS_SCRIPT_URL: 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE',
+  SPREADSHEET_ID: 'YOUR_SPREADSHEET_ID_HERE',
+};
+
+export default config;

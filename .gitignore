@@ -1,0 +1,26 @@
+# .gitignore
+
+# Ignore configuration files with secrets
+config.js
+secrets.json
+**/config.js
+
+# Ignore environment files
+.env
+
+# Ignore node_modules if you're using npm
+node_modules/
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

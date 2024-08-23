@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Webgobbler",
+  "version": "1.0",
+  "description": "Save web pages to Google Sheets",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
