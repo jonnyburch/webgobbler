@@ -37,13 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
           }
 
-          if (response.success) {
+          console.log('Received response:', response);
+
+          if (response && response.success) {
             console.log('Page saved to Google Sheets');
             alert('Page saved successfully!');
             window.close();  // Close the popup after saving
           } else {
-            console.error('Error saving to Google Sheets:', response.error);
-            alert('Error saving to Google Sheets. Please try again.');
+            console.error('Error saving to Google Sheets:', response ? response.error : 'Unknown error');
+            alert('Error saving to Google Sheets: ' + (response ? response.error : 'Unknown error') + '. Please try again.');
           }
         });
       });
