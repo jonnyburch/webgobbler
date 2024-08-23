@@ -1,18 +1,17 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Webgobbler",
   "version": "1.0",
   "description": "Save web pages to Google Sheets",
   "permissions": [
     "activeTab",
-    "storage",
+    "storage"
+  ],
+  "host_permissions": [
     "<all_urls>"
   ],
-  "icons": {
-    "48": "images/icon.svg",
-    "128": "images/icon.svg"
-  },
-  "browser_action": {
+  "action": {
+    "default_icon": "images/icon.svg",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -22,7 +21,6 @@
     }
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   }
 }
